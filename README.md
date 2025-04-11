@@ -1,12 +1,12 @@
-# Vector NLP Chatbot
+# Vector Knowledge Base
 
-A minimalist command-line chatbot with memory capabilities using vector embeddings for semantic search.
+A minimalist command-line knowledge system with semantic memory capabilities using vector embeddings for information retrieval.
 
 ## Features
 
 - **Semantic Memory**: Store and retrieve information using vector embeddings
 - **Fast Similarity Search**: Powered by FAISS for efficient vector similarity matching
-- **Persistent Storage**: Memories are stored in SQLite for persistence between sessions
+- **Persistent Storage**: Knowledge is stored in SQLite for persistence between sessions
 - **Efficient Caching**: Embedding caching to improve performance
 - **Minimal UI**: Simple command-line interface
 
@@ -21,8 +21,8 @@ A minimalist command-line chatbot with memory capabilities using vector embeddin
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/vector-nlp-chatbot.git
-cd vector-nlp-chatbot
+git clone https://github.com/yourusername/vector-knowledge-base.git
+cd vector-knowledge-base
 ```
 
 2. Create and activate a virtual environment:
@@ -46,31 +46,31 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the chatbot:
+Run the knowledge base:
 ```bash
 python main.py
 ```
 
 ### Commands
 
-- **Remember [text]** - Store information in the chatbot's memory
+- **Remember [text]** - Store information in the knowledge base
 - **Forget [text]** - Remove specific information
-- **Forget** - Remove the previously returned answer
+- **Forget** - Remove the previously returned information
 - **Threshold [0-1]** - Set similarity threshold (0.0-1.0) to control recall precision
 - **Exit** - Quit the program
-- **Any other text** - Ask a question (the chatbot will search its memory)
+- **Any other text** - Query the knowledge base (the system will search for relevant information)
 
 ## How It Works
 
 1. **Embeddings**: Text is converted to vector embeddings using SentenceTransformers
-2. **Vector Search**: When you ask a question, it's converted to an embedding and compared to stored memories
-3. **Similarity Matching**: The most similar memory is returned if it exceeds the similarity threshold
-4. **Memory Management**: You can add, remove, and manage stored information
+2. **Vector Search**: When you enter a query, it's converted to an embedding and compared to stored knowledge
+3. **Similarity Matching**: The most similar piece of information is returned if it exceeds the similarity threshold
+4. **Knowledge Management**: You can add, remove, and manage stored information
 
 ## Project Structure
 
 - `main.py` - Command-line interface
-- `chatbot.py` - Core chatbot functionality
+- `knowledge_base.py` - Core knowledge base functionality
 - `memory.py` - Vector storage and retrieval with SQLite persistence
 - `embeddings.py` - Text to vector embedding conversion
 - `models.py` - Data models for the application

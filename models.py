@@ -7,6 +7,6 @@ class Memory:
     embedding: Optional[List[float]] = None
 
 @dataclass(frozen=True)
-class ChatbotResponse:
+class KnowledgeBaseResponse:
     message: str
     confidence: float = 0.0
