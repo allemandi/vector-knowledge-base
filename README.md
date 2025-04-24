@@ -21,7 +21,7 @@ A minimalist command-line knowledge system with semantic memory capabilities usi
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/vector-knowledge-base.git
+git clone https://github.com/allemandi/vector-knowledge-base.git
 cd vector-knowledge-base
 ```
 
@@ -51,6 +51,12 @@ Run the knowledge base:
 python main.py
 ```
 
+Use Commands.
+
+Remember to run the following to leave the Python virtual environment.
+```bash
+deactivate
+```
 ### Commands
 
 - **Remember [text]** - Store information in the knowledge base
