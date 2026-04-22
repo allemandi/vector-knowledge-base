@@ -3,9 +3,9 @@ from memory import VectorMemory
 from models import Memory, KnowledgeBaseResponse
 
 class KnowledgeBase:
-    def __init__(self):
+    def __init__(self, db_path="chatbot_memory.db"):
         self.embedding_gen = EmbeddingGenerator()
-        self.memory = VectorMemory()
+        self.memory = VectorMemory(db_path=db_path)
         self.last_response = None
         self.threshold = 0.3
 
