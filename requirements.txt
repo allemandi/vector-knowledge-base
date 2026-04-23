@@ -1,6 +1,6 @@
 setuptools>=82.0.1
 wheel>=0.46.3
-sentence-transformers>=2.2.2  # Required for embeddings
+sentence-transformers>=5.4.1  # Required for embeddings
 faiss-cpu>=1.13.2  # Required for vector similarity search
 numpy>=1.26.0  # Required by faiss
 orjson>=3.11.8  # For fast JSON serialization of embeddings
