@@ -3,11 +3,11 @@ from typing import List, Tuple
 from models import Memory
 
 class VectorMemory:
-    def __init__(self, dimension=384):
+    def __init__(self, dimension=384, db_path="chatbot_memory.db"):
         self.dimension = dimension
         self.index = faiss.IndexFlatIP(dimension)
         self.memories = []
-        self.db = sqlite3.connect("chatbot_memory.db")
+        self.db = sqlite3.connect(db_path)
         self._setup_db()
         self._load_memories()
         
