@@ -3,5 +3,5 @@ wheel>=0.47.0
 sentence-transformers>=5.5.1  # Required for embeddings
 faiss-cpu>=1.14.2  # Required for vector similarity search
 numpy>=2.4.6  # Required by faiss
-orjson>=3.11.8  # For fast JSON serialization of embeddings
+orjson>=3.11.9  # For fast JSON serialization of embeddings
 typing-extensions>=4.15.0
